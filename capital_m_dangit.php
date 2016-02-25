@@ -14,5 +14,7 @@ add_action( 'widget_title', 'capital_M_dangit' );
 add_action( 'widget_content', 'capital_M_dangit' );
 
 function capital_M_dangit( $text ){
-	return str_replace( 'Filemaker', 'FileMaker', $text );
+	$text = str_replace( 'filemaker', 'FileMaker', $text );
+	$text = str_replace( 'Filemaker', 'FileMaker', $text );
+	return $text;
 }
