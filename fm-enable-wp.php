@@ -4,7 +4,7 @@ Plugin Name: Make WordPress more FileMaker friendly
 Plugin URI: https://luminfire.com/
 Description: Making FileMaker and WordPress play better together since 2017
 Author: LuminFIre (Nick Ciske)
-Version: 1.0
+Version: 1.1
 Author URI: https://luminfire.com/
 */
 
