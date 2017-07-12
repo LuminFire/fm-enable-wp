@@ -8,6 +8,7 @@ Version: 1.0
 Author URI: https://luminfire.com/
 */
 
+if( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
 * ensure brand consistency
