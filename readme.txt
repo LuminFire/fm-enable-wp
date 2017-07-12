@@ -12,7 +12,7 @@ Make WordPress more FileMaker friendly
 == Description ==
 
 1. Keeps you from looking silly when you forget to capitalize the brand name of the product you supposedly specialize in.
-1. Adds support for uoloading .fp7 and .fmp12 files to the WordPress media library.
+1. Adds support for uploading .fp7 and .fmp12 files to the WordPress media library.
 1. More to come! Open and issue if there's a feature you'd like to see
 
 [Inspired by this tweet](https://twitter.com/timcimbura/status/562278464469094401)
