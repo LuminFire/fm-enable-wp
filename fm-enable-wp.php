@@ -31,6 +31,7 @@ function fmwp_capital_M_dangit( $text ){
 function fmwp_mime_type( $mime_types ){
 
 	$mime_types['fmp12'] = 'application/x-filemaker'; //Adding fmp12 extension
+	$mime_types['fp7'] = 'application/x-filemaker'; //Adding fp7 extension
 	return $mime_types;
 
 }
