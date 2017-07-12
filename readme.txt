@@ -3,7 +3,7 @@ Contributors: nickciske, cimbura.com
 Tags: filemaker, wordpress, mime type
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2
 Donate link: https://donate.charitywater.org/donate
 
