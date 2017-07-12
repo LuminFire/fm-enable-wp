@@ -1,22 +1,37 @@
 <?php
 /*
-Plugin Name: Capital M Dang It!
-Plugin URI: http://cimbura.com/
-Description: Fixing your Filemaker [sic] flubs since 2015
-Author: Cimbura.com (Nick Ciske)
+Plugin Name: Make WordPress more FileMaker friendly
+Plugin URI: https://luminfire.com/
+Description: Making FileMaker and WordPress play better together since 2017
+Author: LuminFIre (Nick Ciske)
 Version: 1.0
-Author URI: http://cimbura.com/
+Author URI: https://luminfire.com/
 */
 
-add_filter( 'the_content', 'capital_M_dangit' );
-add_filter( 'the_title', 'capital_M_dangit' );
-add_filter( 'widget_title', 'capital_M_dangit' );
-add_filter( 'widget_content', 'capital_M_dangit' );
 
-function capital_M_dangit( $text ){
+/**
+* ensure brand consistency
+*/
+add_filter( 'the_content', 'fmwp_capital_M_dangit' );
+add_filter( 'the_title', 'fmwp_capital_M_dangit' );
+add_filter( 'widget_title', 'fmwp_capital_M_dangit' );
+add_filter( 'widget_content', 'fmwp_capital_M_dangit' );
+
+function fmwp_capital_M_dangit( $text ){
 	
 	$text = str_replace( array( 'filemaker', 'Filemaker' ), 'FileMaker', $text );
 	return $text;
 
+}
+
+/**
+* allow filemaker .fmp12 uploads
+*/
+function fmwp_mime_type( $mime_types ){
+
+	$mime_types['fmp12'] = 'application/x-filemaker'; //Adding fmp12 extension
+	return $mime_types;
 
 }
+
+add_filter('upload_mimes', 'fmwp_mime_type', 1, 1);
