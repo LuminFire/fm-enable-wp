@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Make WordPress more FileMaker friendly
-Plugin URI: https://luminfire.com/
+Plugin URI: https://github.com/LuminFire/fm-enable-wp/
 Description: Making FileMaker and WordPress play better together since 2017
 Author: LuminFire (Nick Ciske)
 Version: 1.1
